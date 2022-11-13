@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  try-selenium:
+    build: ./
+    tty: true
+    stdin_open: true
+    volumes:
+      - "./:/code/"
+    container_name: try-selenium
